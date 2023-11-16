@@ -1,0 +1,92 @@
+{
+	"chrome": {
+		"default": "113.0",
+		"versions": {
+			"111.0": {
+				"image": "selenoid/chrome:111.0",
+				"port": "4444",
+				"path": "/",
+				"tmpfs": {"/tmp":"size=512m"},
+			 "sessionTimeout": "30m",
+				"cpu": "1",
+				"mem": "1024"
+			},
+			"112.0": {
+				"image": "selenoid/chrome:112.0",
+				"port": "4444",
+				"path": "/",
+			"tmpfs": {"/tmp":"size=512m"},
+			"sessionTimeout": "30m",
+				"cpu": "1",
+				"mem": "1024"
+			},
+			"113.0": {
+				"image": "selenoid/chrome:113.0",
+				"port": "4444",
+				"path": "/",
+			"tmpfs": {"/tmp":"size=512m"},
+			"sessionTimeout": "30m",
+				"cpu": "1",
+				"mem": "1024"
+			}
+		},
+		"maxInstances": 3
+	},
+	"firefox": {
+		"default": "113.0",
+		"versions": {
+			"111.0": {
+				"image": "selenoid/firefox:111.0",
+				"port": "4444",
+				"path": "/wd/hub",
+			"tmpfs": {"/tmp":"size=512m"},
+			"sessionTimeout": "30m",
+				"cpu": "1",
+				"mem": "1024"
+			},
+			"112.0": {
+				"image": "selenoid/firefox:112.0",
+				"port": "4444",
+				"path": "/wd/hub",
+			"tmpfs": {"/tmp":"size=512m"},
+			"sessionTimeout": "30m",
+				"cpu": "1",
+				"mem": "1024"
+			},
+			"113.0": {
+				"image": "selenoid/firefox:113.0",
+				"port": "4444",
+				"path": "/wd/hub",
+			"tmpfs": {"/tmp":"size=512m"},
+			"sessionTimeout": "30m",
+				"cpu": "1",
+				"mem": "1024"
+			}
+		},
+		"maxInstances": 3
+	},
+	"safari": {
+		"default": "15.0",
+		"versions": {
+			"14.0": {
+				"image": "browsers/safari:14.0",
+				"port": "4444",
+				"path": "/",
+			"sessionTimeout": "30m",
+			"tmpfs": {"/tmp":"size=512m"},
+				"cpu": "1",
+				"mem": "1024"
+			},
+			"15.0": {
+				"image": "browsers/safari:15.0",
+				"port": "4444",
+				"path": "/",
+			"tmpfs": {"/tmp":"size=512m"},
+			"sessionTimeout": "30m",
+				"cpu": "1",
+				"mem": "1024"
+			}
+		},
+		"maxInstances": 3
+	}
+}
