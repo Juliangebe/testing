@@ -1,0 +1,36 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="SuiteName">
+    <listeners>
+        <listener class-name="Managers.ExtentTestNGTestListener"/>
+    </listeners>
+
+<!--    <listeners>-->
+<!--        <listener class-name="org.testng.reporters.TestHTMLReporter"/>-->
+<!--    </listeners>-->
+
+    <test name="FillFormTest">
+        <classes>
+            <class name="com.DemoLogin.FillFormTest"/>
+        </classes>
+    </test>
+
+    <test name="DemoRegisterTest">
+        <classes>
+            <class name="com.DemoLogin.DemoRegisterTest"/>
+        </classes>
+    </test>
+
+    <test name="BaseClassTest">
+        <classes>
+            <class name="com.DemoLogin.BaseClassTest"/>
+        </classes>
+    </test>
+
+    <test name="BaseClassTest1">
+        <classes>
+            <class name="com.DemoLogin.BaseClassTest1"/>
+        </classes>
+    </test>
+</suite>
+
